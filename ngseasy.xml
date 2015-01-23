@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+
+<repositories version="1.0">
+        <repo priority="50" quality="experimental" status="unofficial">
+                <name>ngseasy</name>
+                <description>NGS Easy.</description>
+                <homepage>https://github.com/elij/ngseasy-overlay</homepage>
+                <owner>
+                        <email>comp-bio@kcl.ac.uk</email>
+                </owner>
+                <source type="git">git://github.com/elij/ngseasy-overlay.git</source>
+        </repo>
+</repositories>
