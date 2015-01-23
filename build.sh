@@ -9,7 +9,7 @@ stage3=$(basename "${latest_stage3}")
 
 [ ! -f "${stage3}" ] && xz=true || xz=false
 
-if [ -n $(gpg --list-public-keys | grep -o 2D182910) ]; then
+if [ -z $(gpg --list-public-keys | grep -o 2D182910) ]; then
 	gpg --keyserver subkeys.pgp.net --recv-keys 0xBB572E0E2D182910
 fi
 
