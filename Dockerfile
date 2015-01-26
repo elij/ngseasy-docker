@@ -35,6 +35,16 @@ RUN emerge-webrsync -q
 RUN emerge layman
 RUN echo "source /var/lib/layman/make.conf" >> /etc/portage/make.conf
 ADD ngseasy.xml /etc/layman/overlays/
+RUN layman -s
+RUN layman -a ngseasy
+
+# ngs easy deps
+RUN emerge =dev-libs/protobuf-2.4.1
+#
+#
+#
+#
+#
 
 # Display some news items
 RUN eselect news read new
