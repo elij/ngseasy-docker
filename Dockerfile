@@ -44,8 +44,22 @@ RUN emerge =dev-libs/protobuf-2.4.1
 RUN emerge ant
 RUN emerge bioperl
 RUN emerge cblas
-RUN emerge bedtools
 RUN emerge goby-cpp
+RUN emerge =sci-biology/gmap-2012.07.20
+RUN emerge =sci-libs/htslib-1.1
+RUN emerge =dev-lang/lua-5.1.5-r3
+RUN emerge =sci-biology/bcftools-1.1
+RUN emerge =sci-biology/samtools-1.1
+RUN emerge =sci-biology/bedtools-2.20.1
+RUN emerge =sci-biology/vcftools-0.1.8
+RUN emerge =sci-biology/vcflib-9999
+RUN emerge =sci-biology/sambamba-0.5.1
+RUN emerge =sci-biology/sambamba-bin-0.5.1
+RUN emerge =sci-biology/samblaster-0.1.21
+RUN emerge =sci-biology/libStatGen-1.0.12
+RUN emerge =sci-biology/bamUtil-1.0.12
+
+
 #
 #
 #
