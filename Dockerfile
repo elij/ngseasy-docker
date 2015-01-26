@@ -53,7 +53,6 @@ RUN emerge =sci-biology/samtools-1.1
 RUN emerge =sci-biology/bedtools-2.20.1
 RUN emerge =sci-biology/vcftools-0.1.8
 RUN emerge =sci-biology/vcflib-9999
-RUN emerge =sci-biology/sambamba-0.5.1
 RUN emerge =sci-biology/sambamba-bin-0.5.1
 RUN emerge =sci-biology/samblaster-0.1.21
 RUN emerge =sci-biology/libStatGen-1.0.12
