@@ -58,7 +58,7 @@ RUN emerge =sci-biology/sambamba-bin-0.5.1
 RUN emerge =sci-biology/samblaster-0.1.21
 RUN emerge =sci-biology/libStatGen-1.0.12
 RUN emerge =sci-biology/bamUtil-1.0.12
-
+RUN emerge sys-process/parallel
 
 #
 #
