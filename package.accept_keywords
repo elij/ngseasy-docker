@@ -4,4 +4,6 @@
 =sci-biology/gmap-2012.07.20 ~amd64
 # required by bedtools (argument)
 =sci-biology/bedtools-2.20.1 ~amd64
+# required by vcftools (argument)
+=sci-biology/vcftools-0.1.8 ~amd64
 
