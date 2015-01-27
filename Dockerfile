@@ -37,7 +37,6 @@ RUN echo "source /var/lib/layman/make.conf" >> /etc/portage/make.conf
 ADD ngseasy.xml /etc/layman/overlays/
 RUN layman -S
 RUN layman -a ngseasy
-RUN layman -a science
 
 # ngs easy deps
 ADD package.accept_keywords /etc/portage/
@@ -58,6 +57,9 @@ RUN emerge =sci-biology/samblaster-0.1.21
 RUN emerge =sci-biology/libStatGen-1.0.12
 RUN emerge =sci-biology/bamUtil-1.0.12
 RUN emerge sys-process/parallel
+
+RUN layman -a science
+RUN sci-biology/picard
 
 #
 #

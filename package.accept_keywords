@@ -6,4 +6,30 @@
 =sci-biology/bedtools-2.20.1 ~amd64
 # required by vcftools (argument)
 =sci-biology/vcftools-0.1.8 ~amd64
+# required by sci-biology/picard-1.103
+# required by sci-biology/picard (argument)
+=dev-java/cofoja-1.1_p150 ~amd64
+# required by dev-java/testng-6.8-r2
+# required by sci-biology/picard-1.103[-test]
+# required by sci-biology/picard (argument)
+=dev-java/jcommander-1.32 ~amd64
+# required by sci-biology/picard-1.103
+# required by sci-biology/picard (argument)
+=dev-java/commons-jexl-2.1.1 ~amd64
+# required by dev-java/cofoja-1.1_p150
+# required by sci-biology/picard-1.103
+# required by sci-biology/picard (argument)
+=dev-java/asm-4.0 ~amd64
+# required by sci-biology/picard-1.103[-test]
+# required by sci-biology/picard (argument)
+=dev-java/testng-6.8-r2 ~amd64
+# required by dev-java/testng-6.8-r2
+# required by sci-biology/picard-1.103[-test]
+# required by sci-biology/picard (argument)
+=dev-java/guice-2.0 ~amd64
+# required by sci-biology/picard-1.103
+# required by sci-biology/picard (argument)
+=dev-java/snappy-1.0.3_rc3 ~amd64
+# required by sci-biology/picard (argument)
+=sci-biology/picard-1.103 ~amd64
 
