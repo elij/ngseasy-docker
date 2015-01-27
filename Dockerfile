@@ -35,7 +35,7 @@ RUN emerge-webrsync -q
 RUN emerge layman
 RUN echo "source /var/lib/layman/make.conf" >> /etc/portage/make.conf
 ADD ngseasy.xml /etc/layman/overlays/
-RUN layman -s
+RUN layman -S
 RUN layman -a ngseasy
 
 # ngs easy deps
