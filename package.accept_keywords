@@ -34,3 +34,6 @@
 =sci-biology/picard-1.103 ~amd64
 sci-biology/fastqc **
 sci-biology/trimmomatic ~amd64
+# required by =sci-biology/bamtools-2.3.0 (argument)
+=sci-biology/bamtools-2.3.0 ~amd64
+
