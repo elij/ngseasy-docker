@@ -32,4 +32,4 @@
 =dev-java/snappy-1.0.3_rc3 ~amd64
 # required by sci-biology/picard (argument)
 =sci-biology/picard-1.103 ~amd64
-
+sci-biology/fastqc **
