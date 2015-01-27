@@ -62,6 +62,8 @@ RUN emerge sys-process/parallel
 RUN layman -a science
 RUN emerge sci-biology/picard
 RUN emerge =sci-biology/fastqc-0.11.2
+RUN emerge sci-biology/trimmomatic
+RUN emerge freebayes
 #
 #
 #

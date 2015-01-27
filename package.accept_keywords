@@ -33,3 +33,4 @@
 # required by sci-biology/picard (argument)
 =sci-biology/picard-1.103 ~amd64
 sci-biology/fastqc **
+sci-biology/trimmomatic ~amd64
