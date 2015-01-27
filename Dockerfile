@@ -40,6 +40,7 @@ RUN layman -a ngseasy
 
 # ngs easy deps
 ADD package.accept_keywords /etc/portage/
+ADD package.use /etc/portage/
 RUN emerge =dev-libs/protobuf-2.4.1
 RUN emerge bioperl
 RUN emerge cblas
@@ -59,8 +60,8 @@ RUN emerge =sci-biology/bamUtil-1.0.12
 RUN emerge sys-process/parallel
 
 RUN layman -a science
-RUN sci-biology/picard
-
+RUN emerge sci-biology/picard
+RUN emerge =sci-biology/fastqc-0.11.2
 #
 #
 #
