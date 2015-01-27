@@ -37,6 +37,7 @@ RUN echo "source /var/lib/layman/make.conf" >> /etc/portage/make.conf
 ADD ngseasy.xml /etc/layman/overlays/
 RUN layman -S
 RUN layman -a ngseasy
+RUN layman -a science
 
 # ngs easy deps
 ADD package.accept_keywords /etc/portage/
