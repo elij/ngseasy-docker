@@ -41,7 +41,6 @@ RUN layman -a ngseasy
 # ngs easy deps
 ADD package.accept_keywords /etc/portage/
 RUN emerge =dev-libs/protobuf-2.4.1
-RUN emerge ant
 RUN emerge bioperl
 RUN emerge cblas
 RUN emerge goby-cpp
