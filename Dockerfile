@@ -65,6 +65,7 @@ RUN emerge =sci-biology/fastqc-0.11.2
 RUN emerge sci-biology/trimmomatic
 RUN emerge =sci-biology/bamtools-2.3.0
 RUN emerge freebayes
+RUN emerge udev-init-scripts openrc procps
 #
 #
 #
