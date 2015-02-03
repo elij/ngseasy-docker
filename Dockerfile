@@ -25,8 +25,15 @@ RUN echo 'UTC' > /etc/timezone
 #
 # Setup the portage directory and permissions
 RUN mkdir -p /usr/portage/{distfiles,metadata,packages}
+RUN mkdir -p /usr/local/local-portage/ngseasy-base/ngseasy-meta/
+RUN mkdir -p /usr/local/local-portage/{profiles,metadata}
+RUN echo 'PORTDIR_OVERLAY="/usr/local/local-portage/"' >> /etc/portage/make.conf
 RUN chown -R portage:portage /usr/portage
 RUN echo "masters = gentoo" > /usr/portage/metadata/layout.conf
+RUN echo "masters = gentoo" > /usr/local/local-portage/metadata/layout.conf
+RUN echo "ngseasy-base" >> /etc/portage/categories
+ADD overlay/Manifest /usr/local/local-portage/ngseasy-base/ngseasy-meta/
+ADD overlay/ngseasy-meta-9999.ebuild /usr/local/local-portage/ngseasy-base/ngseasy-meta/
 
 # Sync portage
 RUN emerge-webrsync -q
@@ -37,36 +44,14 @@ RUN echo "source /var/lib/layman/make.conf" >> /etc/portage/make.conf
 ADD ngseasy.xml /etc/layman/overlays/
 RUN layman -S
 RUN layman -a ngseasy
+RUN layman -a science
+RUN layman -s ngseasy
 
 # ngs easy deps
 ADD package.accept_keywords /etc/portage/
 ADD package.use /etc/portage/
-RUN emerge =dev-libs/protobuf-2.4.1
-RUN emerge bioperl
-RUN emerge cblas
-RUN emerge goby-cpp
-RUN emerge =sci-biology/gmap-2012.07.20
-RUN emerge =sci-libs/htslib-1.1
-RUN emerge =dev-lang/lua-5.1.5-r3
-RUN emerge =sci-biology/bcftools-1.1
-RUN emerge =sci-biology/samtools-1.1
-RUN emerge =sci-biology/bedtools-2.20.1
-RUN emerge =sci-biology/vcftools-0.1.8
-RUN emerge =sci-biology/vcflib-9999
-RUN emerge =sci-biology/sambamba-bin-0.5.1
-RUN emerge =sci-biology/samblaster-0.1.21
-RUN emerge =sci-biology/libStatGen-1.0.12
-RUN emerge =sci-biology/bamUtil-1.0.12
-RUN emerge sys-process/parallel
 
-RUN layman -a science
-RUN emerge sci-biology/picard
-RUN layman -s ngseasy
-RUN emerge =sci-biology/fastqc-0.11.2
-RUN emerge sci-biology/trimmomatic
-RUN emerge =sci-biology/bamtools-2.3.0
-RUN emerge freebayes
-RUN emerge udev-init-scripts openrc procps
+RUN emerge ngseasy-base/ngseasy-meta
 #
 #
 #
