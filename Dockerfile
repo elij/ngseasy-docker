@@ -52,6 +52,7 @@ RUN layman -s ngseasy
 ADD package.accept_keywords /etc/portage/
 ADD package.use /etc/portage/
 
+RUN emerge sci-biology/bamtools
 RUN emerge ngseasy-base/ngseasy-meta
 #
 #
