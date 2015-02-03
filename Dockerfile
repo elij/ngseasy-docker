@@ -32,6 +32,7 @@ RUN chown -R portage:portage /usr/portage
 RUN echo "masters = gentoo" > /usr/portage/metadata/layout.conf
 RUN echo "masters = gentoo" > /usr/local/local-portage/metadata/layout.conf
 RUN echo "ngseasy-base" >> /etc/portage/categories
+RUN echo "ngseasy overlay" >> /usr/local/local-portage/profiles/repo_name
 ADD overlay/Manifest /usr/local/local-portage/ngseasy-base/ngseasy-meta/
 ADD overlay/ngseasy-meta-9999.ebuild /usr/local/local-portage/ngseasy-base/ngseasy-meta/
 
