@@ -30,8 +30,5 @@ RDEPEND="=dev-libs/protobuf-2.4.1
 	sci-biology/trimmomatic
 	=sci-biology/bamtools-2.3.0
 	sci-biology/freebayes
-	sys-fs/udev-init-scripts
-	sys-apps/openrc
-	sys-process/procps
 	=sci-physics/root-5.34.18-r2"
 
