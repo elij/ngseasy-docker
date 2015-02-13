@@ -1,2 +1,3 @@
 dev-java/icedtea-bin -X -alsa -cups
 sci-physics/root -X -opengl
+sci-biology/bioperl -db

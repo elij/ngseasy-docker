@@ -39,20 +39,12 @@ ADD overlay/ngseasy-meta-9999.ebuild /usr/local/local-portage/ngseasy-base/ngsea
 # Sync portage
 RUN emerge-webrsync -q
 RUN emerge --sync
-RUN emerge sys-fs/udev-init-scripts sys-apps/openrc sys-process/procps
 
-
+# Fixes for stage3 (December 2014) and portage mismatch
+RUN emerge sys-fs/udev-init-scripts sys-apps/openrc sys-process/procps virtual/perl-Module-Build
 
 # Layman / Custom overlay
-#RUN emerge -t =virtual/perl-Scalar-List-Utils-1.270.0-r2 \
-#	 =virtual/perl-Digest-SHA-5.820.0 \
-#	=virtual/perl-Digest-MD5-2.520.0-r2 \
-#	=virtual/perl-Sys-Syslog-0.320.0-r2 \
-#	=virtual/perl-Compress-Raw-Zlib-2.60.0-r2 \
-#	=virtual/perl-version-0.990.200-r1 \
-#	=virtual/perl-parent-0.225.0-r5 
-
-RUN emerge =virtual/perl-Module-Build-0.420.500-r1 layman
+RUN emerge layman
 RUN echo "source /var/lib/layman/make.conf" >> /etc/portage/make.conf
 ADD ngseasy.xml /etc/layman/overlays/
 RUN layman -S
