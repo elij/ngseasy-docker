@@ -1,3 +1,7 @@
 dev-java/icedtea-bin -X -alsa -cups
 sci-physics/root -X -opengl
 sci-biology/bioperl -db
+# required by sci-visualization/gnuplot-4.6.5[gd]
+# required by sci-biology/fastx_toolkit-0.0.14::science
+# required by =sci-biology/fastx_toolkit-0.0.14 (argument)
+=media-libs/gd-2.0.35-r4 png

@@ -51,3 +51,8 @@ sci-biology/trimmomatic ~amd64
 =sci-biology/bioperl-run-1.6.9 ~amd64
 
 
+# required by =sci-biology/fastx_toolkit-0.0.14 (argument)
+=sci-biology/fastx_toolkit-0.0.14 ~amd64
+# required by sci-biology/fastx_toolkit-0.0.14::science
+# required by =sci-biology/fastx_toolkit-0.0.14 (argument)
+=sci-biology/libgtextutils-0.6.1 ~amd64
