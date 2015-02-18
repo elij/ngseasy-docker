@@ -58,3 +58,5 @@ sci-biology/trimmomatic ~amd64
 =sci-biology/libgtextutils-0.6.1 ~amd64
 # required by =sci-biology/mrsfast-2.6.0.4 (argument)
 =sci-biology/mrsfast-2.6.0.4 ~amd64
+# required by mrsfast-ultra (argument)
+=sci-biology/mrsfast-ultra-3.3.1 ~amd64
