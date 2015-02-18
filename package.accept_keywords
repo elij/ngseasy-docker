@@ -56,3 +56,5 @@ sci-biology/trimmomatic ~amd64
 # required by sci-biology/fastx_toolkit-0.0.14::science
 # required by =sci-biology/fastx_toolkit-0.0.14 (argument)
 =sci-biology/libgtextutils-0.6.1 ~amd64
+# required by =sci-biology/mrsfast-2.6.0.4 (argument)
+=sci-biology/mrsfast-2.6.0.4 ~amd64
