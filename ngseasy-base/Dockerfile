@@ -47,7 +47,7 @@ ONBUILD RUN layman -a science
 # Setup local overlay area
 ONBUILD RUN mkdir -p /usr/local/local-portage/ngseasy-base/ngseasy-meta/
 ONBUILD RUN mkdir -p /usr/local/local-portage/{profiles,metadata}
-ONBUILD RUN echo 'PORTDIR_OVERLAY="/usr/local/local-portage/"' >> /etc/portage/make.conf
+ONBUILD RUN echo 'PORTDIR_OVERLAY="/usr/local/local-portage/ ${PORTDIR_OVERLAY}"' >> /etc/portage/make.conf
 ONBUILD RUN echo "masters = gentoo" > /usr/local/local-portage/metadata/layout.conf
 ONBUILD RUN echo "ngseasy-base" >> /etc/portage/categories
 ONBUILD RUN echo "ngseasy overlay" >> /usr/local/local-portage/profiles/repo_name
