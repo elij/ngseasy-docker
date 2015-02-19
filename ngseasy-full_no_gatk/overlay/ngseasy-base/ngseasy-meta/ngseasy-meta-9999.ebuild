@@ -19,7 +19,7 @@ RDEPEND="=dev-libs/protobuf-2.4.1
 	=sci-biology/samtools-1.1
 	=sci-biology/bedtools-2.20.1
 	=sci-biology/vcftools-0.1.8
-	=sci-biology/vcflib-9999
+	=sci-biology/vcflib-20141212
 	=sci-biology/sambamba-bin-0.5.1
 	=sci-biology/samblaster-0.1.21
 	=sci-biology/libStatGen-1.0.12
