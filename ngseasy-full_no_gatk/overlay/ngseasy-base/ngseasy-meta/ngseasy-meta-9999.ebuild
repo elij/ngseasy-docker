@@ -9,9 +9,9 @@ SLOT="0"
 KEYWORDS="amd64 x86"
 
 RDEPEND="=dev-libs/protobuf-2.4.1
-	sci-biology/bioperl
-	virtual/cblas
-	sci-biology/goby-cpp
+	=sci-biology/bioperl-1.6.9
+	=virtual/cblas-1.0
+	=sci-biology/goby-cpp-2.0.1
 	=sci-biology/gmap-2012.07.20
 	=sci-libs/htslib-1.1
 	=dev-lang/lua-5.1.5-r3
@@ -24,11 +24,11 @@ RDEPEND="=dev-libs/protobuf-2.4.1
 	=sci-biology/samblaster-0.1.21
 	=sci-biology/libStatGen-1.0.12
 	=sci-biology/bamUtil-1.0.12
-	sys-process/parallel
-	sci-biology/picard
+	=sys-process/parallel-20140622
+	=sci-biology/picard-1.103
 	=sci-biology/fastqc-0.11.2
-	sci-biology/trimmomatic
+	=sci-biology/trimmomatic-0.32
 	=sci-biology/bamtools-2.3.0
-	sci-biology/freebayes
+	=sci-biology/freebayes-9.9.13
 	=sci-physics/root-5.34.18-r2"
 
