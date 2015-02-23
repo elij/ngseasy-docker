@@ -65,3 +65,43 @@ sci-biology/trimmomatic ~amd64
 =dev-java/icedtea-bin-7.2.5.3 ~amd64
 # required by =virtual/jdk-1.7.0 (argument)
 =virtual/jdk-1.7.0 ~amd64
+# required by sci-BIOC/IRanges-1.20.7::R_Overlay
+# required by sci-BIOC/GenomicRanges-1.14.4::R_Overlay
+# required by sci-CRAN/ExomeDepth-1.0.7::R_Overlay
+# required by =sci-CRAN/ExomeDepth-1.0.7 (argument)
+=sci-BIOC/BiocGenerics-0.8.0 ~amd64
+# required by sci-BIOC/GenomicRanges-1.14.4::R_Overlay
+# required by sci-CRAN/ExomeDepth-1.0.7::R_Overlay
+# required by =sci-CRAN/ExomeDepth-1.0.7 (argument)
+=sci-BIOC/XVector-0.2.0 ~amd64
+# required by sci-BIOC/Rsamtools-1.14.3::R_Overlay
+# required by sci-CRAN/ExomeDepth-1.0.7::R_Overlay
+# required by =sci-CRAN/ExomeDepth-1.0.7 (argument)
+=sci-BIOC/Biostrings-2.30.1 ~amd64
+# required by sci-CRAN/ExomeDepth-1.0.7::R_Overlay
+# required by =sci-CRAN/ExomeDepth-1.0.7 (argument)
+=sci-CRAN/aod-1.3 ~amd64
+# required by sci-CRAN/ExomeDepth-1.0.7::R_Overlay
+# required by =sci-CRAN/ExomeDepth-1.0.7 (argument)
+=sci-BIOC/Rsamtools-1.14.3 ~amd64
+# required by sci-BIOC/Rsamtools-1.14.3::R_Overlay
+# required by sci-CRAN/ExomeDepth-1.0.7::R_Overlay
+# required by =sci-CRAN/ExomeDepth-1.0.7 (argument)
+=sci-BIOC/zlibbioc-1.8.0-r1 ~amd64
+# required by sci-BIOC/GenomicRanges-1.14.4::R_Overlay
+# required by sci-CRAN/ExomeDepth-1.0.7::R_Overlay
+# required by =sci-CRAN/ExomeDepth-1.0.7 (argument)
+=sci-BIOC/IRanges-1.20.7 ~amd64
+# required by sci-BIOC/Rsamtools-1.14.3::R_Overlay
+# required by sci-CRAN/ExomeDepth-1.0.7::R_Overlay
+# required by =sci-CRAN/ExomeDepth-1.0.7 (argument)
+=sci-CRAN/bitops-1.0.6-r1 ~amd64
+# required by sci-BIOC/Rsamtools-1.14.3::R_Overlay
+# required by sci-CRAN/ExomeDepth-1.0.7::R_Overlay
+# required by =sci-CRAN/ExomeDepth-1.0.7 (argument)
+=sci-BIOC/GenomicRanges-1.14.4 ~amd64
+# required by =sci-CRAN/ExomeDepth-1.0.7 (argument)
+=sci-CRAN/ExomeDepth-1.0.7 ~amd64
+# required by sci-CRAN/ExomeDepth-1.0.7::R_Overlay
+# required by =sci-CRAN/ExomeDepth-1.0.7 (argument)
+=sci-CRAN/VGAM-0.9.6 ~amd64

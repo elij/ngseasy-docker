@@ -5,3 +5,8 @@ sci-biology/bioperl -db
 # required by sci-biology/fastx_toolkit-0.0.14::science
 # required by =sci-biology/fastx_toolkit-0.0.14 (argument)
 =media-libs/gd-2.0.35-r4 png
+# required by dev-lang/R-3.0.1
+# required by sci-CRAN/VGAM-0.9.6::R_Overlay
+# required by sci-CRAN/ExomeDepth-1.0.7::R_Overlay
+# required by =sci-CRAN/ExomeDepth-1.0.7 (argument)
+>=sys-libs/zlib-1.2.8-r1 minizip

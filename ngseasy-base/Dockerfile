@@ -43,6 +43,7 @@ ONBUILD RUN echo "source /var/lib/layman/make.conf" >> /etc/portage/make.conf
 ONBUILD RUN layman -S
 ONBUILD RUN layman -a ngseasy
 ONBUILD RUN layman -a science
+ONBUILD RUN layman -a R_Overlay
 
 # Setup local overlay area
 ONBUILD RUN mkdir -p /usr/local/local-portage/ngseasy-base/ngseasy-meta/
