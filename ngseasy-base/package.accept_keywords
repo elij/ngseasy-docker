@@ -101,7 +101,8 @@ sci-biology/trimmomatic ~amd64
 # required by =sci-CRAN/ExomeDepth-1.0.7 (argument)
 =sci-BIOC/GenomicRanges-1.14.4 ~amd64
 # required by =sci-CRAN/ExomeDepth-1.0.7 (argument)
-=sci-CRAN/ExomeDepth-1.0.7 ~amd64
+# =sci-CRAN/ExomeDepth-1.0.7 ~amd64
 # required by sci-CRAN/ExomeDepth-1.0.7::R_Overlay
 # required by =sci-CRAN/ExomeDepth-1.0.7 (argument)
 =sci-CRAN/VGAM-0.9.6 ~amd64
+=dev-lang/R-3.1.2 ~amd64
