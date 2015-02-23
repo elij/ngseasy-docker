@@ -11,3 +11,6 @@ RUN eselect news read new
 
 # Finalization
 RUN env-update
+
+# Remove Portage to shrink
+RUN find /usr/portage/ -type f -exec rm {} \;

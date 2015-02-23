@@ -30,5 +30,12 @@ RDEPEND="=dev-libs/protobuf-2.4.1
 	=sci-biology/trimmomatic-0.32
 	=sci-biology/bamtools-2.3.0
 	=sci-biology/freebayes-9.9.13
-	=sci-physics/root-5.34.18-r2"
+	=sci-physics/root-5.34.18-r2
+	=sci-biology/seqtk-1.0
+	=sci-biology/stampy-1.0.23
+	=sci-biology/bwa-0.7.12
+	=sci-biology/delly-0.6.1
+	=sci-biology/lumpy-0.2.9
+	=sci-CRAN/ExomeDepth-1.0.7
+"
 
