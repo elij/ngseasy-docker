@@ -105,3 +105,4 @@ sci-biology/trimmomatic ~amd64
 # required by sci-CRAN/ExomeDepth-1.0.7::R_Overlay
 # required by =sci-CRAN/ExomeDepth-1.0.7 (argument)
 =sci-CRAN/VGAM-0.9.6 ~amd64
+=dev-java/jflex-1.4.3-r1 ~amd64
