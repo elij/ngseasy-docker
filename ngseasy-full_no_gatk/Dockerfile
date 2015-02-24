@@ -5,7 +5,9 @@ MAINTAINER NGS Easy
 ADD overlay/ngseasy-base/ngseasy-meta/ngseasy-meta-9999.ebuild /usr/local/local-portage/ngseasy-base/ngseasy-meta/
 ADD overlay/ngseasy-base/ngseasy-meta/Manifest /usr/local/local-portage/ngseasy-base/ngseasy-meta/
 
-RUN emerge =dev-java/qdox-1.6.3 && emerge ngseasy-base/ngseasy-meta
+# fix to allow qbox to build
+RUN emerge =dev-java/jflex-1.4.3 && ln -s /usr/bin/jflex-1.4.3 /usr/bin/jflex
+RUN emerge ngseasy-base/ngseasy-meta
 
 # Display some news items
 RUN eselect news read new
