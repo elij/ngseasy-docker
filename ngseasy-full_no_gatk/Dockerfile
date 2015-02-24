@@ -8,6 +8,7 @@ ADD overlay/ngseasy-base/ngseasy-meta/Manifest /usr/local/local-portage/ngseasy-
 # fix to allow qbox to build
 RUN emerge =dev-java/jflex-1.4.3 && ln -s /usr/bin/jflex-1.4.3 /usr/bin/jflex
 RUN emerge ngseasy-base/ngseasy-meta
+RUN emerge =sci-biology/gatk-protected-3.3
 
 # Display some news items
 RUN eselect news read new
