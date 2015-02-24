@@ -26,5 +26,5 @@ if [ ${xz} == true ] || [ ! -f stage3-amd64.tar.xz ]; then
 fi
 echo "I'm done with the stage3."
 
-echo "Building docker Gentoo image now..."
-docker build -t ngseasy-base .
+echo "Building ngseasy Gentoo docker image now..."
+docker build -t ngseasy-base-gentoo .
