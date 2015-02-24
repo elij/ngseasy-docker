@@ -1,4 +1,4 @@
-FROM ngseasy-base
+FROM ngseasy-base-gentoo
 MAINTAINER NGS Easy
 
 # Add docker ebuilds
