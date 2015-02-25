@@ -27,4 +27,4 @@ fi
 echo "I'm done with the stage3."
 
 echo "Building ngseasy Gentoo docker image now..."
-docker build -t ngseasy-base-gentoo .
+docker build -t compbio/ngseasy-base-gentoo .
