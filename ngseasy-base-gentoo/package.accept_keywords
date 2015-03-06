@@ -1,5 +1,5 @@
 # required by =sci-biology/goby-cpp-2.0.1 (argument)
-=sci-biology/goby-cpp-2.0.1 ~amd64
+=sci-biology/goby-cpp-2.0.1-r1 ~amd64
 # required by gmap (argument)
 =sci-biology/gmap-2012.07.20 ~amd64
 # required by bedtools (argument)
