@@ -1,17 +1,38 @@
 FROM compbio/ngseasy-base-gentoo
 MAINTAINER NGS Easy
 
-# Add docker ebuilds
-ADD overlay/ngseasy-base/ngseasy-meta/ngseasy-meta-9999.ebuild /usr/local/local-portage/ngseasy-base/ngseasy-meta/
-ADD overlay/ngseasy-base/ngseasy-meta/Manifest /usr/local/local-portage/ngseasy-base/ngseasy-meta/
-
-RUN emerge ngseasy-base/ngseasy-meta
+RUN emerge \
+	=sci-biology/bioperl-1.6.9 \
+	=virtual/cblas-1.0 \
+	=sci-biology/goby-cpp-2.0.1-r1 \
+	=sci-biology/gmap-2012.07.20 \
+	=sci-libs/htslib-1.1 \
+	=dev-lang/lua-5.1.5-r3 \
+	=sci-biology/bcftools-1.1 \
+	=sci-biology/samtools-1.1 \
+	=sci-biology/bedtools-2.20.1 \
+	=sci-biology/vcftools-0.1.8 \
+	=sci-biology/vcflib-20141212 \
+	=sci-biology/sambamba-bin-0.5.1 \
+	=sci-biology/samblaster-0.1.21 \
+	=sci-biology/libStatGen-1.0.12 \
+	=sci-biology/bamUtil-1.0.12 \
+	=sys-process/parallel-20140622 \
+	=sci-biology/picard-1.103 \
+	=sci-biology/fastqc-0.11.2 \
+	=sci-biology/trimmomatic-0.32 \
+	=sci-biology/bamtools-2.3.0 \
+	=sci-biology/freebayes-9.9.13 \
+	=sci-biology/gatk-protected-3.3 \
+	sci-physics/root \
+	=sci-biology/seqtk-1.0 \
+	=sci-biology/stampy-1.0.23 \
+	=sci-biology/bwa-0.7.12 \
+	=sci-biology/delly-0.6.1 \
+	=sci-biology/lumpy-0.2.9 \
+	=sci-CRAN/ExomeDepth-1.0.7
 
 # Display some news items
-RUN eselect news read new
+RUN eselect news read new \
+	env-update
 
-# Finalization
-RUN env-update
-
-# Remove Portage to shrink
-RUN find /usr/portage/ -type f -exec rm {} \;
