@@ -13,7 +13,7 @@ RUN echo "=sci-biology/goby-cpp-2.0.1-r1 ~amd64" >> /etc/portage/package.accept_
 	echo "=dev-java/guice-2.0 ~amd64" >> /etc/portage/package.accept_keywords && \ 
 	echo "=dev-java/snappy-1.0.3_rc3 ~amd64" >> /etc/portage/package.accept_keywords && \ 
 	echo "=sci-biology/picard-1.103 ~amd64" >> /etc/portage/package.accept_keywords && \ 
-	echo "sci-biology/fastqc **" >> /etc/portage/package.accept_keywords && \ 
+	echo "sci-biology/fastqc-bin **" >> /etc/portage/package.accept_keywords && \ 
 	echo "sci-biology/trimmomatic ~amd64" >> /etc/portage/package.accept_keywords && \ 
 	echo "=sci-biology/bamtools-2.3.0 ~amd64" >> /etc/portage/package.accept_keywords && \ 
 	echo "=sci-physics/root-5.34.26 ~amd64" >> /etc/portage/package.accept_keywords && \ 
@@ -66,7 +66,7 @@ RUN MAKEOPTS="-j$(grep processor /proc/cpuinfo | wc -l)" \
 	=sci-biology/bamUtil-1.0.12 \
 	=sys-process/parallel-20140622 \
 	=sci-biology/picard-1.103 \
-	=sci-biology/fastqc-0.11.2-r1 \
+	=sci-biology/fastqc-bin-0.11.2-r1 \
 	=sci-biology/trimmomatic-0.32 \
 	=sci-biology/bamtools-2.3.0 \
 	=sci-biology/freebayes-9.9.13 \
