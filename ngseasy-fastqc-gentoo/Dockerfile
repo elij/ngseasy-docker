@@ -8,7 +8,7 @@ RUN echo "=dev-java/cofoja-1.1_p150 ~amd64" >> /etc/portage/package.accept_keywo
 	echo "=dev-java/guice-2.0 ~amd64" >> /etc/portage/package.accept_keywords && \
 	echo "=dev-java/snappy-1.0.3_rc3 ~amd64" >> /etc/portage/package.accept_keywords && \
 	echo "=dev-java/asm-5.0.3 ~amd64" >> /etc/portage/package.accept_keywords && \
-	echo "=sci-biology/picard-1.103 ~amd64" >> /etc/portage/package.accept_keywords && \
+	echo "=sci-biology/picard-1.103 ~amd64" >> /etc/portage/package.accept_keywords
 
 RUN echo "dev-java/icedtea-bin -X -alsa -cups" >> /etc/portage/package.use/icedtea-bin
 
