@@ -35,7 +35,7 @@ ONBUILD RUN mkdir -p /usr/portage/{distfiles,metadata,packages} && \
 	emerge --oneshot portage && \
 	touch /etc/portage/package.use && \
 	touch /etc/portage/package.accept_keywords && \
-	MAKEOPTS="-j$(grep processor /proc/cpuinfo | wc -l)" emerge sys-fs/udev-init-scripts sys-apps/openrc sys-process/procps virtual/perl-Module-Build layman && \
+	MAKEOPTS="-j$(nproc)" emerge sys-fs/udev-init-scripts sys-apps/openrc sys-process/procps virtual/perl-Module-Build layman && \
 	echo "source /var/lib/layman/make.conf" >> /etc/portage/make.conf && \
 	layman -S && \
 	layman -a ngseasy && \

@@ -47,7 +47,7 @@ RUN echo "dev-java/icedtea-bin -X -alsa -cups" >> /etc/portage/package.use/icedt
 	echo ">=sys-libs/zlib-1.2.8-r1 minizip" >> /etc/portage/package.use/zlib
 
 
-RUN MAKEOPTS="-j$(grep processor /proc/cpuinfo | wc -l)" \ 
+RUN MAKEOPTS="-j$(nproc)" \ 
 	emerge \
 	=sci-biology/bioperl-1.6.9 \
 	=virtual/cblas-1.0 \

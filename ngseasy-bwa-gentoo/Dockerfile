@@ -3,7 +3,7 @@ MAINTAINER NGS Easy
 
 RUN echo "=sci-biology/bedtools-2.20.1 ~amd64" >> /etc/portage/package.accept_keywords 
 
-RUN MAKEOPTS="-j$(grep processor /proc/cpuinfo | wc -l)" \ 
+RUN MAKEOPTS="-j$(nproc)" \ 
 	emerge \
 	=sci-biology/bedtools-2.20.1 \
 	=sci-biology/sambamba-bin-0.5.1 \

@@ -12,7 +12,7 @@ RUN echo "=dev-java/cofoja-1.1_p150 ~amd64" >> /etc/portage/package.accept_keywo
 
 RUN echo "dev-java/icedtea-bin -X -alsa -cups" >> /etc/portage/package.use/icedtea-bin
 
-RUN MAKEOPTS="-j$(grep processor /proc/cpuinfo | wc -l)" \ 
+RUN MAKEOPTS="-j$(nproc)" \ 
 	emerge \
 	=sci-biology/fastqc-bin-0.11.2-r1
 

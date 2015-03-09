@@ -5,7 +5,7 @@ RUN echo "=sci-biology/trimmomatic-0.32 ~amd64" >> /etc/portage/package.accept_k
 
 RUN echo "dev-java/icedtea-bin -X -alsa -cups" >> /etc/portage/package.use/icedtea-bin
 
-RUN MAKEOPTS="-j$(grep processor /proc/cpuinfo | wc -l)" \ 
+RUN MAKEOPTS="-j$(nproc)" \ 
 	emerge \
 	=sci-biology/trimmomatic-0.32
 
