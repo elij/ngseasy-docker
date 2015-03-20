@@ -1,10 +1,11 @@
+
 FROM compbio/ngseasy-base-gentoo
 MAINTAINER NGS Easy
 
 RUN echo "=sci-biology/goby-cpp-2.0.1-r1 ~amd64" >> /etc/portage/package.accept_keywords && \ 
 	echo "=sci-biology/gmap-2012.07.20 ~amd64" >> /etc/portage/package.accept_keywords && \ 
 	echo "=sci-biology/bedtools-2.20.1 ~amd64" >> /etc/portage/package.accept_keywords && \ 
-	echo "=sci-biology/vcftools-0.1.8 ~amd64" >> /etc/portage/package.accept_keywords && \ 
+	echo "=sci-biology/vcftools-0.1.12b **" >> /etc/portage/package.accept_keywords && \ 
 	echo "=dev-java/cofoja-1.1_p150 ~amd64" >> /etc/portage/package.accept_keywords && \ 
 	echo "=dev-java/jcommander-1.32 ~amd64" >> /etc/portage/package.accept_keywords && \ 
 	echo "=dev-java/commons-jexl-2.1.1 ~amd64" >> /etc/portage/package.accept_keywords && \ 
@@ -37,7 +38,7 @@ RUN echo "=sci-biology/goby-cpp-2.0.1-r1 ~amd64" >> /etc/portage/package.accept_
 	echo "=sci-BIOC/IRanges-1.20.7 ~amd64" >> /etc/portage/package.accept_keywords && \ 
 	echo "=sci-CRAN/bitops-1.0.6-r1 ~amd64" >> /etc/portage/package.accept_keywords && \ 
 	echo "=sci-BIOC/GenomicRanges-1.14.4 ~amd64" >> /etc/portage/package.accept_keywords && \ 
-	echo "=sci-CRAN/VGAM-0.9.6 ~amd64" >> /etc/portage/package.accept_keywords && \ 
+	echo "=sci-CRAN/VGAM-0.9.7 ~amd64" >> /etc/portage/package.accept_keywords && \ 
 	echo "=dev-java/jflex-1.4.3-r2 ~amd64" >> /etc/portage/package.accept_keywords
 
 RUN echo "dev-java/icedtea-bin -X -alsa -cups" >> /etc/portage/package.use/icedtea-bin && \ 
@@ -46,6 +47,7 @@ RUN echo "dev-java/icedtea-bin -X -alsa -cups" >> /etc/portage/package.use/icedt
 	echo "=media-libs/gd-2.0.35-r4 png" >> /etc/portage/package.use/gd && \ 
 	echo ">=sys-libs/zlib-1.2.8-r1 minizip" >> /etc/portage/package.use/zlib
 
+ENV I_KNOW_WHAT_I_AM_DOING I_KNOW_WHAT_I_AM_DOING
 
 RUN MAKEOPTS="-j$(nproc)" \ 
 	emerge \
@@ -58,7 +60,6 @@ RUN MAKEOPTS="-j$(nproc)" \
 	=sci-biology/bcftools-1.1 \
 	=sci-biology/samtools-1.1 \
 	=sci-biology/bedtools-2.20.1 \
-	=sci-biology/vcftools-0.1.8 \
 	=sci-biology/vcflib-20141212 \
 	=sci-biology/sambamba-bin-0.5.1 \
 	=sci-biology/samblaster-0.1.21 \
@@ -77,7 +78,9 @@ RUN MAKEOPTS="-j$(nproc)" \
 	=sci-biology/bwa-0.7.12 \
 	=sci-biology/delly-0.6.1 \
 	=sci-biology/lumpy-0.2.9 \
-	=sci-CRAN/ExomeDepth-1.0.7
+	=sci-CRAN/ExomeDepth-1.0.7 \
+	=sci-biology/vcftools-0.1.12b
+
 
 # Display some news items
 RUN eselect news read new \
